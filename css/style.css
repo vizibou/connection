@@ -1,0 +1,96 @@
+*{
+	margin: 0; padding: 0;
+}
+body{background: #282829;}
+footer{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	padding: 10px 0;
+	text-align: center;
+	color:#fff;
+	background: #444;
+}
+h1{color:#9400d3; font-family: arial;}
+.main{ margin: 10px;}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+	height: 120px;
+	margin: 10px 5%;
+	background: none;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.row .links {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	height: 100px;
+	background: #fff;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+
+.row .links:hover {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	height: 100px;
+	background: #444;
+	border-radius: 3px;
+	border-bottom: 2px solid #fff;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	animation: swing 0.5s ease;
+}
+
+
+/*Animação da div links*/
+
+
+
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/*fim da animação*/
+
+
+.row .links a{
+	color:#9400d3;
+	font-weight: bold;
+	font-family: ubuntu;
+	text-decoration: none;
+}
+
+
+.row .links a:hover{
+	color:#fff;
+	font-weight: bold;
+	font-family: ubuntu;
+	text-decoration: none;
+}
+
+
+img{ width: 20%; margin:10px; }
+
+
+
+
+@media(max-with:500px){
+
+}
